@@ -14,14 +14,13 @@ body {
     'filter'
     'content'
     'footer';
-    grid-template-rows: 100px 120px 1fr 100px;
+    grid-template-rows: 100px 120px 1fr 120px;
     font-family: "Montserrat", sans-serif;
     
 }
 
 .header {
     padding: 20px;
-    /* background-image: linear-gradient(to right top, #5e2129, #471b23, #31151b, #1d0e12, #000000); */
     background-color: #edc040;
     display: flex;
     justify-content: space-between;
@@ -174,11 +173,11 @@ select:focus {
     padding: 20px;
     color: #fff;
     grid-area: footer;
-    /* background-image: linear-gradient(to top, #5e2129, #471b23, #31151b, #1d0e12, #000000);     */
     background-color: #10141b;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -222,6 +221,13 @@ select:focus {
         font-weight: 500;
     }
 
+    .nav-menu a:hover {
+        background-color: #121b28;
+        color: #fff;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
     .filter select{
         width: 100%;
         margin: 0 auto;
@@ -233,7 +239,7 @@ select:focus {
 
     .books {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 0;
+        column-gap: 40px;
         row-gap: 80px;
     }
 
@@ -271,13 +277,6 @@ select:focus {
     .nav-menu {
         flex-direction: column;
         align-items: center;
-    }
-
-    .nav-menu a:hover {
-        background-color: #121b28;
-        color: #fff;
-        padding: 12px;
-        border-radius: 8px;
     }
 
     .filter .select-wrapper {

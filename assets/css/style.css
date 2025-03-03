@@ -21,13 +21,13 @@ body {
 
 .header {
     padding: 20px;
-    background-image: linear-gradient(to right top, #5e2129, #471b23, #31151b, #1d0e12, #000000);
-    /* background-color: #5E2129; */
+    /* background-image: linear-gradient(to right top, #5e2129, #471b23, #31151b, #1d0e12, #000000); */
+    background-color: #edc040;
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-area: header;
-    color: #fff;
+    color: #000;
 }
 
 .nav-menu {
@@ -39,6 +39,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
 }
 
 .logo-title .title {
@@ -78,7 +79,7 @@ body {
 .filter select {
     width: 20rem;
     padding: 10px;
-    border: 1px solid #5e2129;
+    border: 2px solid #edc040;
     outline: none;
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
@@ -95,8 +96,8 @@ body {
   }
 
 select:focus {
-    border: 1px solid #5e2129;
-    box-shadow: 0 0 2px #5e2129;
+    border: 1px solid #edc040;
+    box-shadow: 0 0 2px #edc040;
   }
 
 .principal-content {
@@ -146,19 +147,27 @@ select:focus {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 .pages div {
-    border: 1px solid #5e2129;
+    border: 1px solid #edc040;
+    border-right: none;
     width: 30px;
     height: 30px;
     text-align: center;
     align-content: center;
 }
 
+.pages div:last-child {
+    border-right: 1px  solid #edc040;
+}
+
 .pages div {
-    color: #5e2129;
+    color: #000;
     font-weight: 400;
+    font-size: 13px;
+
 } 
 
 .footer {
@@ -166,7 +175,7 @@ select:focus {
     color: #fff;
     grid-area: footer;
     /* background-image: linear-gradient(to top, #5e2129, #471b23, #31151b, #1d0e12, #000000);     */
-    background-color: #40151b;
+    background-color: #10141b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,7 +218,8 @@ select:focus {
 
     .nav-menu a {
         text-decoration: none;
-        color: #fff;
+        color: #000;
+        font-weight: 500;
     }
 
     .filter select{
@@ -251,16 +261,23 @@ select:focus {
     }
 
     .logo-title img {
-        width: 40px;
+        width: 60px;
     }
 
     .logo-title .title {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .nav-menu {
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav-menu a:hover {
+        background-color: #121b28;
+        color: #fff;
+        padding: 12px;
+        border-radius: 8px;
     }
 
     .filter .select-wrapper {
@@ -275,8 +292,11 @@ select:focus {
 
     .books {
         grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-        gap: 40px;
+        row-gap: 50px;
+    }
 
+    .book .info {
+        font-size: 12px;
     }
 
     .book img {

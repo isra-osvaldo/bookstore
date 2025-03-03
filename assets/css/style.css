@@ -55,6 +55,7 @@ body {
 }
 
 .filter {
+    background-color: #f4f4f4;
     color: #1d0e12;
     grid-area: filter;
     display: flex;

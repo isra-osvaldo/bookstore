@@ -159,6 +159,11 @@ select:focus {
     align-content: center;
 }
 
+.pages div:hover {
+    background-color: #edc040;
+    color: #fff;
+}
+
 .pages div:last-child {
     border-right: 1px  solid #edc040;
 }

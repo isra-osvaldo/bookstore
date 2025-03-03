@@ -103,12 +103,19 @@ select:focus {
 .principal-content {
     grid-area: content;
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pages {
+    margin-top: auto;
 }
 
 .books {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 60px;
+    padding-bottom: 40px;
 }
 
 .book {
@@ -197,6 +204,7 @@ select:focus {
     font-size: 14px;
 }
 
+/* Versión Tablet */
 @media (min-width: 576px) {
     body {
         grid-template-areas: 
@@ -256,6 +264,7 @@ select:focus {
     }
 }
 
+/* Versión Desktop */
 @media (min-width: 992px) {
     body {
         grid-template-areas: 
@@ -298,12 +307,12 @@ select:focus {
     }
 
     .books {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         row-gap: 50px;
     }
 
     .book img {
-        width: 200px;
+        width: 150px;
     }
 
     .book .info {

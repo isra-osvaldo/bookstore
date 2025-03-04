@@ -128,7 +128,7 @@ select:focus {
     padding-bottom: 40px;
 }
 
-.book, .book-mobile {
+.book {
     display: flex;
     flex-direction: column;
     margin-inline: 1.875rem;
@@ -144,7 +144,7 @@ select:focus {
     transform: scale(1.03); 
 }
 
-.book {
+.book:not(:first-child) {
     display: none;
 }
 
@@ -312,7 +312,7 @@ select:focus {
         column-gap: 40px;
     }
 
-    .book {
+    .book:nth-child(n) {
         display: flex;
     }
 

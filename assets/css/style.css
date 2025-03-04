@@ -125,7 +125,15 @@ select:focus {
     flex-direction: column;
     margin-inline: 1.875rem;
     align-items: center;
-    height: 450px;
+    min-height: 450px;
+    border-radius: 1rem; 
+    padding: 1.2rem;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.book:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09); /* Agrega sombra al hacer hover */
+    transform: scale(1.03); 
 }
 
 .book img {
@@ -136,21 +144,50 @@ select:focus {
     margin-top: 12px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     width: 100%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
+    flex-grow: 1;
 }
 
 .info h3 { 
     padding-top: 15px;
     font-weight: 600;
     text-transform: uppercase;
+    /* flex-grow: 1; */
+    text-align: center;
 }
 
 .info p {
     color: rgb(215, 34, 34);
     font-weight: 600;
+}
+
+.buy {
+    min-width: 200px;
+    margin-top: auto;
+    background-color: #59595a; 
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: .7rem;
+    border-radius: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.ti-shopping-cart {
+    margin-left: 5px;
+    font-size: 0.875rem;
+}
+
+.buy:hover {
+    background-color: #c8ae7b;
 }
 
 .pages {
@@ -264,6 +301,10 @@ select:focus {
         place-self: center;
     }
 
+    .book .info {
+        font-size: 12px;
+    }
+
     .footer {
         position: sticky;
     }
@@ -323,10 +364,6 @@ select:focus {
 
     .book img {
         width: 200px;
-    }
-
-    .book .info {
-        font-size: 12px;
     }
 
     .footer {

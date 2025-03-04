@@ -14,11 +14,11 @@ body {
     'filter'
     'content'
     'footer';
-    grid-template-rows: 100px 120px 1fr 120px;
+    grid-template-rows: 6.25rem 7.5rem 1fr 7.5rem;
     font-family: "Montserrat", sans-serif;
     
 }
-
+/* Header nav */
 .header {
     padding: 20px;
     background-color: #edc040;
@@ -43,17 +43,18 @@ body {
 
 .logo-title .title {
     font-family: "Audiowide";
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .icon-menu .ti {
-    font-size: 35px;
+    font-size: 2.188rem;
 }
 
 .logo-image {
-    width: 60px;
+    width: 3.75rem;
 }
 
+/* Sección: Filtro */
 .filter {
     background-color: #f4f4f4;
     color: #1d0e12;
@@ -100,6 +101,7 @@ select:focus {
     box-shadow: 0 0 2px #edc040;
   }
 
+/* Main content */
 .principal-content {
     grid-area: content;
     padding: 40px 0;
@@ -119,15 +121,15 @@ select:focus {
 }
 
 .book {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    margin-inline: 30px;
+    margin-inline: 1.875rem;
     align-items: center;
+    height: 450px;
 }
 
 .book img {
-    width: 250px;
+    width: 15rem;
 }
 
 .book .info {
@@ -137,11 +139,11 @@ select:focus {
     gap: 10px;
     width: 100%;
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .info h3 { 
-    padding-top: 10px;
+    padding-top: 15px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -211,8 +213,8 @@ select:focus {
         'header header'
         'filter content'
         'footer footer';
-        grid-template-rows: 120px 1fr 100px;
-        grid-template-columns: 200px 1fr;
+        grid-template-rows: 7.5rem 1fr 6.25rem;
+        grid-template-columns: 12.5rem 1fr;
         height: 100vh;
     }
 
@@ -253,13 +255,13 @@ select:focus {
     }
 
     .books {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el tamaño de las columnas */
         column-gap: 40px;
     }
 
     .book {
-        /* border: 2px solid red; */
-        width: 250px;
+        width: 15.625rem;
+        place-self: center;
     }
 
     .footer {
@@ -309,8 +311,18 @@ select:focus {
         padding-inline: 100px;
     }
 
+    .books {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        column-gap: 40px;
+        place-content: center;
+    }
+
+    .book {
+        height: 350px;
+    }
+
     .book img {
-        width: 150px;
+        width: 200px;
     }
 
     .book .info {

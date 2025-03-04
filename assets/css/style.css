@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #edc040;
+    --secondary-color: #10141b;
+    --white-color: #fff;
+    --buy-button: #c8ae7b;
+    --hover-button: #59595a;
+}
+
 body {
     height: 100vh;
     display: grid;
@@ -21,12 +29,12 @@ body {
 /* Header nav */
 .header {
     padding: 20px;
-    background-color: #edc040;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-area: header;
-    color: #000;
+    color: var(--secondary-color);
 }
 
 .nav-menu {
@@ -57,7 +65,7 @@ body {
 /* Sección: Filtro */
 .filter {
     background-color: #f4f4f4;
-    color: #1d0e12;
+    color: var(--secondary-color);
     grid-area: filter;
     display: flex;
     flex-direction: column;
@@ -80,7 +88,7 @@ body {
 .filter select {
     width: 20rem;
     padding: 10px;
-    border: 2px solid #edc040;
+    border: 2px solid var(--primary-color);
     outline: none;
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
@@ -97,8 +105,8 @@ body {
   }
 
 select:focus {
-    border: 1px solid #edc040;
-    box-shadow: 0 0 2px #edc040;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 2px var(--primary-color);
   }
 
 /* Main content */
@@ -168,9 +176,9 @@ select:focus {
 .buy {
     min-width: 200px;
     margin-top: auto;
-    background-color: #c8ae7b; 
+    background-color: var(--buy-button); 
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     display: block;
     padding: .7rem;
     border-radius: .5rem;
@@ -187,7 +195,7 @@ select:focus {
 }
 
 .buy:hover {
-    background-color: #59595a; 
+    background-color: var(--hover-button); 
 }
 
 .pages {
@@ -198,7 +206,7 @@ select:focus {
 }
 
 .pages div {
-    border: 1px solid #edc040;
+    border: 1px solid var(--primary-color);
     border-right: none;
     width: 30px;
     height: 30px;
@@ -207,16 +215,16 @@ select:focus {
 }
 
 .pages div:hover {
-    background-color: #edc040;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
 .pages div:last-child {
-    border-right: 1px  solid #edc040;
+    border-right: 1px  solid var(--primary-color);
 }
 
 .pages div {
-    color: #000;
+    color: var(--secondary-color);
     font-weight: 400;
     font-size: 13px;
 
@@ -226,7 +234,7 @@ select:focus {
     padding: 20px;
     color: #fff;
     grid-area: footer;
-    background-color: #10141b;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-items: center;

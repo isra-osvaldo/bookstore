@@ -284,8 +284,8 @@ select:focus {
     }
 
     .nav-menu a:hover {
-        background-color: #121b28;
-        color: #fff;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
         padding: 12px;
         border-radius: 8px;
     }

@@ -253,10 +253,13 @@ select:focus {
     }
 
     .books {
-        /* grid-template-columns: repeat(2, 1fr); */
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         column-gap: 40px;
-        row-gap: 80px;
+    }
+
+    .book {
+        /* border: 2px solid red; */
+        width: 250px;
     }
 
     .footer {
@@ -304,11 +307,6 @@ select:focus {
     .principal-content {
         overflow-y: auto;
         padding-inline: 100px;
-    }
-
-    .books {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        row-gap: 50px;
     }
 
     .book img {

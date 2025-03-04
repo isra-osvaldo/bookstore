@@ -294,8 +294,8 @@ select:focus {
     .nav-menu a:hover {
         background-color: var(--secondary-color);
         color: var(--white-color);
-        padding: 12px;
-        border-radius: 8px;
+        padding: 13px;
+        border-radius: 30px;
     }
 
     .filter select{

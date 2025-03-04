@@ -168,7 +168,7 @@ select:focus {
 .buy {
     min-width: 200px;
     margin-top: auto;
-    background-color: #59595a; 
+    background-color: #c8ae7b; 
     text-decoration: none;
     color: #fff;
     display: block;
@@ -187,7 +187,7 @@ select:focus {
 }
 
 .buy:hover {
-    background-color: #c8ae7b;
+    background-color: #59595a; 
 }
 
 .pages {
